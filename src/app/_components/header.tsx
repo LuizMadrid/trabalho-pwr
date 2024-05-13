@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 
 import { LogIn, MenuIcon, SchoolIcon } from 'lucide-react';
+import { Dialog, DialogTrigger } from './ui/dialog';
+import { SignInDialog } from './singin-dialog';
 
 export const Header = () => {
 	return (
@@ -31,12 +33,20 @@ export const Header = () => {
 			</div>
 
 			<div className="flex items-center gap-4">
-				<Button className="hidden md:gap-2 md:flex" size="sm" variant="secondary">
-					<LogIn className="size-4" />
-					Entrar
-				</Button>
+				<Dialog>
+					<DialogTrigger asChild>
+						<Button 
+							className="hidden md:gap-2 md:flex" 
+							variant="secondary">
+							<LogIn className="size-4" />
+							Entrar
+						</Button>
+					</DialogTrigger>
+					
+					<SignInDialog />
+				</Dialog>
 
-				<Button className="md:hidden" size="icon" variant="secondary">
+				<Button className="px-2 md:hidden" variant="ghost">
 					<MenuIcon className="size-6" />
 					<span className="sr-only">Toggle navigation</span>
 				</Button>

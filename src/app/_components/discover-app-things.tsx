@@ -1,4 +1,4 @@
-import { InboxIcon, LockIcon, MergeIcon, SearchIcon, SettingsIcon } from 'lucide-react';
+import { FastForward, FileUp, LockIcon, MonitorSmartphone, PersonStanding, SearchIcon } from 'lucide-react';
 import { Features } from './features';
 
 export default function PlatformDiscover() {
@@ -17,41 +17,41 @@ export default function PlatformDiscover() {
 						</div>
 
 						<div className="w-full max-w-full mx-auto space-y-4">
-							<div className="grid grid-cols-3 gap-8">
+							<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 								<Features 
-									title="Inbox Management" 
-									description="Inbox Management helps you organize your emails and keep your inbox clutter-free." 
-									icon={<InboxIcon className="w-6 h-6 text-white opacity-75" />}
+									title="Controle a saída do seu filho" 
+									description="Com nosso serviço de autorização de saída, você pode autorizar a saída do seu filho com segurança." 
+									icon={<PersonStanding className="w-6 h-6 text-white opacity-75" />}
 								/>
 
 								<Features 
-									title="Seamless Integration" 
-									description="Seamless Integration allows you to connect with your favorite apps and services without leaving your inbox." 
-									icon={<MergeIcon className="w-6 h-6 text-white opacity-75" />}
+									title="Solicite documentos" 
+									description="Ao solicitar documentos, escolha declarações, histórico escolar e outros documentos importantes." 
+									icon={<FileUp className="w-6 h-6 text-white opacity-75" />}
 								/>
 
 								<Features 
-									title="Advanced Customization" 
-									description="With Advanced Customization, you can personalize your email client to suit your preferences and work style." 
-									icon={<SettingsIcon className="w-6 h-6 text-white opacity-75" />}
+									title="Cadastre seu filho com facilidade" 
+									description="Chega de burocracia! Cadastre seu filho com rapidez." 
+									icon={<FastForward className="w-6 h-6 text-white opacity-75" />}
 								/>
 
 								<Features 
-									title="Powerful Search" 
-									description="Our Powerful Search feature allows you to find any email, contact, or file in seconds." 
+									title="Gerenciado pelo funcionário" 
+									description="Com nosso sistema de gerenciamento, os funcionários podem acessar informações importantes, como certidão de nascimento e comprovante de residência." 
 									icon={<SearchIcon className="w-6 h-6 text-white opacity-75" />}
 								/>
 
 								<Features 
-									title="Reliable Security" 
-									description="With Reliable Security, your data is always safe and protected." 
+									title="Segurança e privacidade confiáveis" 
+									description="Nossa plataforma é segura e protege suas informações pessoais em conformidade com as leis de privacidade." 
 									icon={<LockIcon className="w-6 h-6 text-white opacity-75" />}
 								/>
 
 								<Features 
-									title="Easy Collaboration" 
-									description="Easy Collaboration allows you to share and edit documents with your team in real time." 
-									icon={<MergeIcon className="w-6 h-6 text-white opacity-75" />}
+									title="Acesse em qualquer dispositivo" 
+									description="Nossa plataforma é responsiva e pode ser acessada em qualquer dispositivo, seja desktop, tablet ou smartphone." 
+									icon={<MonitorSmartphone className="w-6 h-6 text-white opacity-75" />}
 								/>
 							</div>
 						</div>
