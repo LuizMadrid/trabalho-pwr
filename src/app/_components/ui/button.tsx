@@ -23,6 +23,7 @@ const buttonVariants = cva(
 				link: 'text-primary underline-offset-4 hover:underline',
 
 				dropbar: 'font-bold justify-start items-center hover:bg-accent py-2 gap-2 w-full',
+				none: '',
 			},
 			size: {
 				default: 'h-10 px-4 py-2',
